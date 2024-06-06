@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_16sdp"
+        android:background="@drawable/background_item_recycle">
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_add_task"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgCancel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <TextView
+            android:id="@+id/tv_Duration"
+            app:layout_constraintTop_toBottomOf="@id/imgCancel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/textview_duration"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/tv_Time"
+            android:layout_width="85dp"
+            app:layout_constraintStart_toEndOf="@id/tv_Duration"
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_textview"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill,MissingConstraints,NestedWeights,TextFields" />
+
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/custom_textview"
+            android:textStyle="bold"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_Time"
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/tv_Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_Duration"
+            android:layout_weight="3"
+            android:layout_margin="@dimen/_16sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/textview_task"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edt_Task"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:layout_weight="7"
+            android:background="@drawable/custom_textview"
+            android:hint="@string/hint_work"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_Date"
+            app:layout_constraintStart_toStartOf="@id/tv_Time"
+            app:layout_constraintTop_toBottomOf="@id/tv_Time"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/textview_des"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_Task"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edt_DesTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/custom_textview"
+            android:hint="@string/hint_describe"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="@dimen/_8sdp"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="Autofill,MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/btn_Add_Task"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_16sdp"
+            android:src="@drawable/ic_add"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_DesTask"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

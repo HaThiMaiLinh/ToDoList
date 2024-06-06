@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_alll"
+        android:title="Tất cả"/>
+    <item
+        android:id="@+id/menu_completed"
+        android:title="Đã hoàn thành"
+        android:icon="@drawable/ic_completed" />
+    <item
+        android:id="@+id/menu_not_completed"
+        android:title="Chưa hoàn thành"
+        android:icon="@drawable/ic_not_completed" />
+    <item
+        android:id="@+id/menu_late"
+        android:title="Muộn"
+        android:icon="@drawable/ic_late" />
+</menu>

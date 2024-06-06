@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+
+
+    <string name="hint_searchview">Search...</string>
+
+    <string name="textview_filter">Filter</string>
+
+    <string name="label_name_task">Tên công việc</string>
+    <string name="label_not_note">Không có ghi chú</string>
+    <string name="label_note">Ghi chú</string>
+    <string name="label_score">Tự chấm điểm</string>
+    <string name="label_des">Mô tả</string>
+    <string name="label_time_end">Thời hạn</string>
+    <string name="label_success">Hoàn thành</string>
+    <string name="textview_addcategory">Add category</string>
+    <string name="textview_signout">Are you sure you want to sign out?</string>
+    <string name="textview_add_task">Add Task</string>
+    <string name="textview_duration">Duration</string>
+    <string name="textview_task">Task</string>
+    <string name="textview_des">Description</string>
+    <string name="hint_describe">Describe...</string>
+    <string name="hint_work">Enter work...</string>
+    <string name="input_note">Nhập vào ghi chú...</string>
+
+    <string name="label_confirm">Xác nhận hoàn thành công việc này ?</string>
+    <string name="label_oke">Oke</string>
+    <string name="label_cancel">Hủy</string>
+    <string name="toast">\"Phải phải chấm điểm và nhập ghi chú để hoàn thành\"</string>
+    <string name="label_da_cap_nhat">Đã cập nhật công việc</string>
+</resources>
